@@ -1,0 +1,88 @@
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+.main-container{
+width: 1280px;
+height: 4340px;
+background-color: lightgrey;
+margin: 0 auto;
+}
+.header-slider{
+  width: 1280px;
+  height: 800px;
+  background-image: url("file://c:/Users/Zane/Desktop/Html_Css/Mood_website/Mood_images/REDbg-01.svg");
+}
+.extra-color{
+  width: 1280px;
+  height: 1000px;
+  background-color: rgb(211, 53, 35, 0.3);
+  /*kā panākt, lai gan extra krāsas opacity darbojas, gan ari header opacity darbojas?*/
+}
+.header-container{
+  width: 1280px;
+  height: 70px;
+  background-color: rgb(211, 53, 35);
+  opacity: 1;
+}
+.logo-name{
+  width: 250px;
+  height: 70px;
+  float: left;
+}
+.logo{
+  display: inline-block;
+  margin-top: 11px;
+  margin-left: 53px;
+  margin-right: 10px;
+}
+.name{
+  display: inline-block;
+  color: white;
+  margin-left: 0px;
+  vertical-align: top;
+  padding-top: 28px;
+  }
+.categories{
+  width: 450px;
+  height: 70px;
+  background-color: transparent;
+  float: right;
+}
+ul{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  padding-right: 53px;
+}
+li{
+  float: right;
+}
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 22px 10px;
+  text-decoration: none;
+  border-top: 5px solid transparent;
+}
+li a:hover{
+  border-top: 5px solid white;
+  background-color: transparent;
+}
+.slider{
+  width: 1280;
+  height: 730;
+}
+.logo_l{
+  display: block;
+  margin-left: 182px;
+  margin-top: 80px;
+  margin-right: 182px;
+  margin-bottom: 248px;
+}
