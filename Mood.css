@@ -1,3 +1,8 @@
+body{
+  margin:0;
+  font-size: 12px;
+}
+
 .cf:before,
 .cf:after {
   content: "";
@@ -8,27 +13,33 @@
 }
 
 .main-container{
-width: 1280px;
+width: auto;
 height: 4340px;
 background-color: lightgrey;
 margin: 0 auto;
+font-family: 'Roboto', sans-serif;
 }
 .header-slider{
-  width: 1280px;
+  width: auto;
   height: 800px;
-  background-image: url("file://c:/Users/Zane/Desktop/Html_Css/Mood_website/Mood_images/REDbg-01.svg");
+  background-image: url("images/REDbg-01.svg");
+  background-size: cover;
 }
 .extra-color{
-  width: 1280px;
-  height: 1000px;
-  background-color: rgb(211, 53, 35, 0.3);
-  /*kā panākt, lai gan extra krāsas opacity darbojas, gan ari header opacity darbojas?*/
+  width: auto;
+  height: 800px;
+  background-color: rgba(211, 53, 35, 0.3);
 }
 .header-container{
-  width: 1280px;
+  width: auto;
   height: 70px;
   background-color: rgb(211, 53, 35);
-  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(211,53,35,0.3);
+  z-index: 2;
 }
 .logo-name{
   width: 250px;
@@ -38,8 +49,9 @@ margin: 0 auto;
 .logo{
   display: inline-block;
   margin-top: 11px;
-  margin-left: 53px;
-  margin-right: 10px;
+  margin-left: auto;
+  margin-right: 12px;
+  padding-left: 53px;
 }
 .name{
   display: inline-block;
@@ -47,9 +59,11 @@ margin: 0 auto;
   margin-left: 0px;
   vertical-align: top;
   padding-top: 28px;
+  font-weight: 300;
+  font-size: 14px;
   }
 .categories{
-  width: 450px;
+  width: auto;
   height: 70px;
   background-color: transparent;
   float: right;
@@ -61,28 +75,154 @@ ul{
   padding-right: 53px;
 }
 li{
-  float: right;
+  float: left;
 }
 li a{
   display: block;
   color: white;
+  font-size: 14px;
+  font-weight: 300;
   text-align: center;
-  padding: 22px 10px;
-  text-decoration: none;
+  line-height: 65px;
   border-top: 5px solid transparent;
+  padding: 0px 9px;
+  text-decoration: none;
 }
 li a:hover{
   border-top: 5px solid white;
   background-color: transparent;
 }
-.slider{
-  width: 1280;
-  height: 730;
+.slider-container{
+  width: auto;
+  height: 730px;
+}
+.logo-dots{
+  height: 731px;
+  position: relative;
 }
 .logo_l{
   display: block;
-  margin-left: 182px;
-  margin-top: 80px;
-  margin-right: 182px;
-  margin-bottom: 248px;
+  margin: auto;
+  padding-top: 244px;
+  width: 920px;
+}
+.quote{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.666667;
+  display: block;
+  margin: 0 auto;
+  width: 920px;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  color: white;
+  position: inherit;
+  padding-top: 57px;
+}
+.icon_list{
+  width: 300px;
+  padding-left: 350px;
+}
+.icons{
+  margin: 35px 15px 0px 15px;
+  display: inline-block;
+  text-align: center;
+  opacity: 0.5;
+}
+div.icons:hover{
+opacity: 1;
+}
+.side_dots {
+margin-right: 30px;
+position: absolute;
+top: 55%;
+right: 0;
+}
+a:hover .dots{
+  background-color: white;
+}
+.dots{
+width: 9px;
+height: 9px;
+border: 1px solid white;
+border-radius: 50%;
+margin: 8px 0px;
+background-color: transparent;
+}
+.offers_container {
+background-color: rgb(211,53,35);
+height: 548px;
+width: auto;
+margin: auto;
+}
+.offers {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  margin: auto;
+  padding-top: 68px;
+}
+.offers_title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+}
+.offers_clms {
+  margin-top: 68px;
+  width: 300px;
+  height: 400px;
+  display: inline-block;
+  float: left;
+  }
+.offer{
+
+}
+.offer_img{
+  display: inline-block;
+  height: 90px;
+  align-items: middle;
+}
+/*kā var dabūt ka acs bilde ir middle?*/
+.offer_title{
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-top: 24px;
+}
+.offer_text{
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  margin: 34px 30px;
+  line-height: 1.3333;
+}
+.portfolio_container{
+  height: 960px;
+  width: auto;
+  background-image: url("images/GREENBg.svg");
+  background-size: cover;
+  background-position: 0 0;
+
+  /*vai mums ir pašiem jāmaina grādu pagrieziens backgroundam pa 180 grādiem?*/
+}
+.port_extra_color{
+  width: auto;
+  height: 960px;
+  background-color: rgba(87, 170, 104, 0.2);
+}
+.port_title{
+  width: auto;
+  padding-top: 67px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
