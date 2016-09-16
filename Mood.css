@@ -68,16 +68,16 @@ font-family: 'Roboto', sans-serif;
   background-color: transparent;
   float: right;
 }
-ul{
+ul.menu_line{
   list-style-type:none;
   margin: 0;
   padding: 0;
   padding-right: 53px;
 }
-li{
+li.menu_line_btn{
   float: left;
 }
-li a{
+li.menu_line_btn a{
   display: block;
   color: white;
   font-size: 14px;
@@ -88,7 +88,7 @@ li a{
   padding: 0px 9px;
   text-decoration: none;
 }
-li a:hover{
+li.menu_line_btn a:hover{
   border-top: 5px solid white;
   background-color: transparent;
 }
@@ -97,7 +97,7 @@ li a:hover{
   height: 730px;
 }
 .logo-dots{
-  height: 731px;
+  height: 730px;
   position: relative;
 }
 .logo_l{
@@ -106,7 +106,7 @@ li a:hover{
   padding-top: 244px;
   width: 920px;
 }
-.quote{
+.qoute{
   font-size: 18px;
   font-weight: 300;
   line-height: 1.666667;
@@ -141,11 +141,13 @@ right: 0;
 }
 a:hover .dots{
   background-color: white;
+  opacity: 1;
 }
 .dots{
 width: 9px;
 height: 9px;
 border: 1px solid white;
+opacity: 0.3;
 border-radius: 50%;
 margin: 8px 0px;
 background-color: transparent;
@@ -167,7 +169,7 @@ margin: auto;
 .offers_title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 400;
   color: white;
 }
@@ -179,16 +181,28 @@ margin: auto;
   float: left;
   }
 .offer{
-
 }
 .offer_img{
+  width: 100px;
+  height: 100px;
   display: inline-block;
   height: 90px;
-  align-items: middle;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
-/*kā var dabūt ka acs bilde ir middle?*/
+.offer_img_eye{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left:0px;
+  margin: auto;
+}
 .offer_title{
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
@@ -196,7 +210,7 @@ margin: auto;
   margin-top: 24px;
 }
 .offer_text{
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   text-align: center;
   color: white;
@@ -204,25 +218,384 @@ margin: auto;
   line-height: 1.3333;
 }
 .portfolio_container{
-  height: 960px;
+  height: 388px;
   width: auto;
   background-image: url("images/GREENBg.svg");
   background-size: cover;
   background-position: 0 0;
-
-  /*vai mums ir pašiem jāmaina grādu pagrieziens backgroundam pa 180 grādiem?*/
 }
 .port_extra_color{
   width: auto;
-  height: 960px;
+  height: 988px;
   background-color: rgba(87, 170, 104, 0.2);
 }
+.port_block{
+  width: 960px;
+  height: 388px;
+  margin: auto;
+}
 .port_title{
-  width: auto;
   padding-top: 67px;
   text-align: center;
   color: white;
   font-size: 30px;
   font-weight: 400;
   text-transform: uppercase;
+}
+.qoute2{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.3333;
+  display: block;
+  margin: 0 auto;
+  width: 960px;
+  text-align: center;
+  color: white;
+  position: inherit;
+  padding-top: 53px;
+}
+.port_menu{
+  width: auto;
+  height: 42px;
+  margin-top: 46px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  text-align: center;
+}
+.port_menu_block{
+  display: inline-block;
+}
+ul.port_menu_line{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+li.port_menu_line_btn{
+  float: left;
+}
+li.port_menu_line_btn a{
+  display: block;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid transparent;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 0 25px;
+}
+li.port_menu_line_btn a:hover{
+  border: 2px solid white;
+  border-radius: 10%;
+  background-color: transparent;
+}
+.port_btns{
+  width: auto;
+  height: 33px;
+  margin: auto;
+  text-align: center;
+}
+.port_btns_block{
+  display: inline-block;
+}
+a:hover .port_btns_dots{
+  background-color: white;
+  opacity: 1;
+}
+.port_btns_dots{
+  width: 9px;
+  height: 9px;
+  border: 1px solid white;
+  opacity: 0.3;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 7px;
+  background-color: transparent;
+}
+.port_gallery{
+  width: auto;
+  height: 600px;
+  position: relative;
+  top:0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
+}
+.port_gallery_block{
+  display: block;
+  margin: auto;
+  width: 1280px;
+}
+.port_gallery_image{
+  display:inline-block;
+  width: 320px;
+  height: 300px;
+  float: left;
+  position: relative;
+
+}
+.port_glry_overlay{
+  display: none;
+  background-color: rgba(87,170,104,0.8);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.port_gallery_image:hover .port_glry_overlay{
+  display: block;
+}
+.port_glry_content{
+  width: 100%;
+  vertical-align: top;
+  position: absolute;
+  top: 50%;
+  color: white;
+  line-height: 1.3333;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.port_glry_content_title{
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 35px;
+}
+.port_glry_content_p{
+  font-size: 14px;
+  font-weight: 300;
+}
+.team_container{
+  width: auto;
+  height: auto;
+  background-color: rgb(87,170,104);
+  clear: both;
+}
+.team_dscrp{
+  margin: auto;
+}
+.team_dscrp_title{
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.team_dscrp_content{
+
+}
+.team_dscrp_text{
+  width: 990px;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.333;
+  color: white;
+  text-align: center;
+  padding-bottom: 48px;
+}
+.port_dscrp_sliders{
+
+}
+.team_dscrp_all{
+width: auto;
+height: 445px;
+margin: auto;
+}
+.team_dscrp_all_ppl{
+width: 1173px;
+height: auto;
+margin: auto;
+text-align: center;
+}
+.team_dscrp_ppl{
+width: 270px;
+height: auto;
+display: inline-block;
+float: left;
+}
+.team_dscrp_ppl_margin{
+  margin-left:30px;
+}
+.team_dscrp_ppl_img{
+  width: 270px;
+  height: 300px;
+  position: relative;
+}
+.team_dscrp_ppl_img:hover .team_dscrp_ppl_img_overlay{
+  display: block;
+}
+.team_dscrp_ppl_bio{
+  height: auto;
+  text-align:center;
+}
+.team_dscrp_ppl_bio_name{
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin-top:22px;
+}
+.team_dscrp_ppl_bio_position{
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.56;
+  margin-top: 15px;
+}
+.team_dscrp_ppl_img_overlay{
+  background-color: rgba(87,170,104,0.8);
+  display: none;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.team_dscrp_ppl_img_overlay_cont{
+  position: absolute;
+  top: 25px;
+  bottom: 25px;
+  right: 25px;
+  left: 25px;
+}
+.team_dscrp_overlay_title{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3333;
+  color: white;
+  padding-bottom: 15px;
+}
+.team_dscrp_overlay_text{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+}
+.team_dscrp_ppl_img_overlay_soc_cont{
+  width: 100%;
+  position: relative;
+  top: 70px;
+  margin: auto;
+}
+.team_dscrp_ppl_img_overlay_soc_block{
+
+}
+.team_dscr_img_overlay_soc_icon_block{
+  width: 42px;
+  height: 42px;
+  background-color: rgba(0,0,0,0.3);
+  display: inline-block;
+}
+.overlay_soc_icon_style{
+position: relative;
+top:25%;
+}
+.contact_container{
+  width: auto;
+  height: 600px;
+  background-image: url(images/BLUEbg.svg);
+  background-size: cover;
+  background-position: 0 0;
+  margin: auto;
+}
+.contact_overlay{
+  width: auto;
+  height: 600px;
+  background-color: rgba(46,45,107,0.2);
+  margin: auto;
+}
+.contact_title{
+  padding-top: 48px;
+  padding-bottom: 48px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+.contact_form_cont{
+  width: auto;
+  height: auto;
+
+}
+.contact_form_block{
+  width: 620px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+.contact_form_fields{
+
+}
+.contact_form{
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(46,45,107,0.7);
+  border: none;
+}
+.contact__name_email{
+  width: 100%;
+  height: 36px;
+}
+.contact_text{
+
+}
+.contact_form_submit{
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: transparent;
+  /*ka ielikt iekspuse tekstu??*/
+  /*ka nonemt labaja apaksheja sturi tabulas apzimejumu?*/
+}
+.contact_form_adress_block{
+  width: 780px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+.contact_form_adress{
+  padding-top: 42px;
+  padding-bottom: 48px;
+  font-size: 21px;
+  font-weight: 300;
+  color: white;
+}
+.map_container{
+  width: auto;
+  height: 600px;
+  margin: auto;
+  background-color: rgb(46,45,107);
+}
+.map{
+  width: 1280px;
+  height: 600px;
+}
+.copyright_container{
+  width: auto;
+  height: 43px;
+  background-color: rgb(46,45,107);
+}
+.copyright_block{
+  width: 230px;
+  height:20px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.copyright_text{
+  font-size: 13px;
+  font-weight: 300;
+  color: white;
+  line-height: 2.307692;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
 }

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+
+
 <html>
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="Mood.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
   <div class="main-container">
@@ -19,12 +22,12 @@
         </div>
     </div>
     <div class="categories">
-       <ul>
-         <li> <a href="#1">Sākums</a></li>
-         <li> <a href="#2">Pakalpojumi</a></li>
-         <li> <a href="#3">Darbi</a></li>
-         <li> <a href="#4">Komanda</a></li>
-         <li> <a href="#5">Sazināties</a></li>
+       <ul class="menu_line">
+         <li class="menu_line_btn"> <a href="#1">Sākums</a></li>
+         <li class="menu_line_btn"> <a href="#2">Pakalpojumi</a></li>
+         <li class="menu_line_btn"> <a href="#3">Darbi</a></li>
+         <li class="menu_line_btn"> <a href="#4">Komanda</a></li>
+         <li class="menu_line_btn"> <a href="#5">Sazināties</a></li>
         </ul>
     </div>
   </div>
@@ -32,7 +35,7 @@
       <div class="logo-dots">
         <div class= "logo_l">
         <img src="images/Mood_logo_l.png" alt="Mood logo" style="width:920px;height:313px;">
-          <div class="quote">
+          <div class="qoute">
           Mēs ticam, ka esam paveikuši savu darbu labi, ja klients iegūst efektīvu un viegli lietojamu instrumentu – vai tas būtu mājas lapas prototips, makets, logotips – kas palīdz sasniegt nepieciešamo rezultātu – pārdot preci, izglītot, izklaidēt vai informēt
           </div>
           <div class="icon_list">
@@ -79,7 +82,7 @@
             <div class="offers_clms">
               <div class="offer">
                 <div class="offer_img">
-                  <img src="images/offer_eye.png" alt="offer_eye" style="width:90px;height:52px;">
+                  <img class="offer_img_eye" src="images/offer_eye.png" alt="offer_eye" style="width:90px;height:52px;">
                 </div>
                 <div class="offer_title">
                   Poligrāfija
@@ -92,27 +95,26 @@
             <div class="offers_clms">
               <div class="offer">
                 <div class="offer_img">
-                  <img src="images/offer_uix.png" alt="offer_eye" style="width:75px;height:74px;">
+                  <img src="images/offer_uix.png" alt="offer_uix" style="width:75px;height:74px;">
                 </div>
                 <div class="offer_title">
                   UI/UX dizains
                 </div>
                 <div class="offer_text">
-                  Veidojam tīmekļa un aplikāciju vizuālo un lietojamības <br> dizainu lai lietotājs ātri un ērti<br /> var iegūt nepieciešamo informāciju
-                <!--mums tekstos ir jāliek br vai ari ka savadak japanak ka teksts ir identisks psd faila izkartotajam tekstam-->
+                  Veidojam tīmekļa un aplikāciju vizuālo un lietojamības dizainu lai lietotājs ātri un ērti var iegūt nepieciešamo informāciju
                 </div>
               </div>
             </div>
             <div class="offers_clms">
               <div class="offer">
                 <div class="offer_img">
-                  <img src="images/offer_camera.png" alt="offer_eye" style="width:90px;height:72px;">
+                  <img src="images/offer_camera.png" alt="offer_camera" style="width:90px;height:72px;">
                 </div>
                 <div class="offer_title">
                   Foto / video apstrāde
                 </div>
                 <div class="offer_text">
-                  Fotografējam produktus un produktu kompozīcijas, interje- <br />rus, objektus un vietas reklāmas vajadzībām. Veicam fotoapstrādi, kā arī video montāžu un apstrādi
+                  Fotografējam produktus un produktu kompozīcijas, interje- rus, objektus un vietas reklāmas vajadzībām. Veicam fotoapstrādi, kā arī video montāžu un apstrādi
                 </div>
               </div>
             </div>
@@ -120,13 +122,400 @@
       </div>
       <div class="portfolio_container">
         <div class="port_extra_color">
+          <div class="port_block">
             <div class="port_title">
               Mūsu darbi
             </div>
+            <div class="qoute2">
+              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a omare odio.
+            </div>
+            <div class="port_menu">
+              <div class="port_menu_block">
+                <ul class="port_menu_line">
+                   <li class="port_menu_line_btn"> <a href="#port_1">Viss</a></li>
+                   <li class="port_menu_line_btn"> <a href="#port_2">Identitāte</a></li>
+                   <li class="port_menu_line_btn"> <a href="#port_3">Web dizains</a></li>
+                   <li class="port_menu_line_btn"> <a href="#port_4">Aplikāciju dizains</a></li>
+                   <li class="port_menu_line_btn"> <a href="#port_5">Fotogrāfija</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="port_btns">
+              <div class="port_btns_block">
+                <a href="#to2"><div class="port_btns_dots"></div></a>
+                <a href="#to3"><div class="port_btns_dots"></div></a>
+                <a href="to1"><div class="port_btns_dots"></div></a>
+              </div>
+            </div>
+          </div>
+          <div class="port_gallery">
+            <div class="port_gallery_block">
+              <div class="port_gallery_image">
+                <img src="images/port_digital.jpg" alt="portfolio_digital" style="width:320px;height:300px;">
+                <div class="port_glry_overlay">
+                  <div class="port_glry_content">
+                    <div>
+                      <i class="fa fa-bullseye" aria-hidden="true" style="font-size: 40px;"></i>
+                    </div>
+                    <div class="port_glry_content_title">
+                      Proin gravida nibh vel velit
+                    </div>
+                    <div class="port_glry_content_p">
+                      Fotogrāfija
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="port_gallery_image">
+                <img src="images/port_prints.jpg" alt="portfolio_prints" style="width:320px;height:300px;">
+                <div class="port_glry_overlay">
+                  <div class="port_glry_content">
+                    <div>
+                      <i class="fa fa-bullseye" aria-hidden="true" style="font-size: 40px;"></i>
+                    </div>
+                    <div class="port_glry_content_title">
+                      Proin gravida nibh vel velit
+                    </div>
+                    <div class="port_glry_content_p">
+                      Fotogrāfija
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="port_gallery_image">
+                <img src="images/port_items.jpg" alt="portfolio_items" style="width:320px;height:300px;">
+                <div class="port_glry_overlay">
+                  <div class="port_glry_content">
+                    <div>
+                      <i class="fa fa-bullseye" aria-hidden="true" style="font-size: 40px;"></i>
+                    </div>
+                    <div class="port_glry_content_title">
+                      Proin gravida nibh vel velit
+                    </div>
+                    <div class="port_glry_content_p">
+                      Fotogrāfija
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="port_gallery_image">
+                <img src="images/port_interior.jpg" alt="portfolio_interior" style="width:320px;height:300px;">
+                <div class="port_glry_overlay">
+                  <div class="port_glry_content">
+                    <div>
+                      <i class="fa fa-bullseye" aria-hidden="true" style="font-size: 40px;"></i>
+                    </div>
+                    <div class="port_glry_content_title">
+                      Proin gravida nibh vel velit
+                    </div>
+                    <div class="port_glry_content_p">
+                      Fotogrāfija
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="port_gallery_image">
+                <img src="images/port_measure.jpg" alt="portfolio_measure" style="width:320px;height:300px;">
+                <div class="port_glry_overlay">
+                  <div class="port_glry_content">
+                    <div>
+                      <i class="fa fa-bullseye" aria-hidden="true" style="font-size: 40px;"></i>
+                    </div>
+                    <div class="port_glry_content_title">
+                      Proin gravida nibh vel velit
+                    </div>
+                    <div class="port_glry_content_p">
+                      Fotogrāfija
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="port_gallery_image">
+                <img src="images/port_tour.jpg" alt="portfolio_tour" style="width:320px;height:300px;">
+                <div class="port_glry_overlay">
+                  <div class="port_glry_content">
+                    <div>
+                      <i class="fa fa-bullseye" aria-hidden="true" style="font-size: 40px;"></i>
+                    </div>
+                    <div class="port_glry_content_title">
+                      Proin gravida nibh vel velit
+                    </div>
+                    <div class="port_glry_content_p">
+                      Fotogrāfija
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="port_gallery_image">
+                <img src="images/port_traffic.jpg" alt="portfolio_traffic" style="width:320px;height:300px;">
+                <div class="port_glry_overlay">
+                  <div class="port_glry_content">
+                    <div>
+                      <i class="fa fa-bullseye" aria-hidden="true" style="font-size: 40px;"></i>
+                    </div>
+                    <div class="port_glry_content_title">
+                      Proin gravida nibh vel velit
+                    </div>
+                    <div class="port_glry_content_p">
+                      Fotogrāfija
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="port_gallery_image">
+                <img src="images/port_trip.jpg" alt="portfolio_trip" style="width:320px;height:300px;">
+                <div class="port_glry_overlay">
+                  <div class="port_glry_content">
+                    <div>
+                      <i class="fa fa-bullseye" aria-hidden="true" style="font-size: 40px;"></i>
+                    </div>
+                    <div class="port_glry_content_title">
+                      Proin gravida nibh vel velit
+                    </div>
+                    <div class="port_glry_content_p">
+                      Fotogrāfija
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="team_container">
+        <div class="team_dscrp">
+          <div class="team_dscrp_title">
+            Mūsu komanda
+          </div>
+          <div class="team_dscrp_content">
+            <div class="team_dscrp_text">
+              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.
+            </div>
+            <div class="port_dscrp_sliders">
+              <div class="port_btns">
+                <div class="port_btns_block">
+                  <a href="#to2"><div class="port_btns_dots"></div></a>
+                  <a href="#to3"><div class="port_btns_dots"></div></a>
+                  <a href="to1"><div class="port_btns_dots"></div></a>
+                </div>
+              </div>
+              <div class="team_dscrp_all">
+                <div class="team_dscrp_all_ppl">
+                  <div class="team_dscrp_ppl">
+                    <div class="team_dscrp_ppl_img">
+                      <img src="images/team_01.jpg" alt="team_01" style="width:270px;height:300px;">
+                      <div class="team_dscrp_ppl_img_overlay">
+                        <div class="team_dscrp_ppl_img_overlay_cont">
+                          <div class="team_dscrp_overlay_title">
+                            Proin gravida nibh vel velit auctor aliquet
+                          </div>
+                          <div class="team_dscrp_overlay_text">
+                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                          </div>
+                          <div class="team_dscrp_ppl_img_overlay_soc_cont">
+                            <div class="team_dscrp_ppl_img_overlay_soc_block">
+                              <div class="team_dscr_img_overlay_soc_icon_block">
+                                <div class="overlay_soc_icon_style">
+                                  <img src="images/twitter.png" alt="twitter" style="width:26px; height:24px;">
+                                </div>
+                              </div>
+                              <div class="team_dscr_img_overlay_soc_icon_block">
+                                <div class="overlay_soc_icon_style">
+                                  <img src="images/facebook.png" alt="facebook" style="width:12px; height:24px;">
+                                </div>
+                              </div>
+                              <div class="team_dscr_img_overlay_soc_icon_block">
+                                <div class="overlay_soc_icon_style">
+                                  <img src="images/dribble.png" alt="dribble" style="width:24px; height:24px;">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="team_dscrp_ppl_bio">
+                      <div class="team_dscrp_ppl_bio_name">
+                        Jānis Pirmais
+                      </div>
+                      <div class="team_dscrp_ppl_bio_position">
+                        Izpilddirektors
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team_dscrp_ppl team_dscrp_ppl_margin">
+                    <div class="team_dscrp_ppl_img">
+                      <img src="images/team_02.jpg" alt="team_02" style="width:270px;height:300px;">
+                      <div class="team_dscrp_ppl_img_overlay">
+                        <div class="team_dscrp_ppl_img_overlay_cont">
+                          <div class="team_dscrp_overlay_title">
+                            Proin gravida nibh vel velit auctor aliquet
+                          </div>
+                          <div class="team_dscrp_overlay_text">
+                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                          </div>
+                          <div class="team_dscrp_ppl_img_overlay_soc_cont">
+                            <div class="team_dscrp_ppl_img_overlay_soc_block">
+                              <div class="team_dscr_img_overlay_soc_icon_block">
+                                <div class="overlay_soc_icon_style">
+                                  <img src="images/twitter.png" alt="twitter" style="width:26px; height:24px;">
+                                </div>
+                              </div>
+                              <div class="team_dscr_img_overlay_soc_icon_block">
+                                <div class="overlay_soc_icon_style">
+                                  <img src="images/facebook.png" alt="facebook" style="width:12px; height:24px;">
+                                </div>
+                              </div>
+                              <div class="team_dscr_img_overlay_soc_icon_block">
+                                <div class="overlay_soc_icon_style">
+                                  <img src="images/dribble.png" alt="dribble" style="width:24px; height:24px;">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="team_dscrp_ppl_bio">
+                      <div class="team_dscrp_ppl_bio_name">
+                      Annija Otrā
+                      </div>
+                      <div class="team_dscrp_ppl_bio_position">
+                      Grafiskā dizainere
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team_dscrp_ppl team_dscrp_ppl_margin">
+                    <div class="team_dscrp_ppl_img">
+                      <img src="images/team_03.jpg" alt="team_03" style="width:270px;height:300px;">
+                      <div class="team_dscrp_ppl_img_overlay">
+                        <div class="team_dscrp_ppl_img_overlay_cont">
+                          <div class="team_dscrp_overlay_title">
+                            Proin gravida nibh vel velit auctor aliquet
+                          </div>
+                          <div class="team_dscrp_overlay_text">
+                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                          </div>
+                          <div class="team_dscrp_ppl_img_overlay_soc_cont">
+                            <div class="team_dscrp_ppl_img_overlay_soc_block">
+                              <div class="team_dscr_img_overlay_soc_icon_block">
+                                <div class="overlay_soc_icon_style">
+                                  <img src="images/twitter.png" alt="twitter" style="width:26px; height:24px;">
+                                </div>
+                              </div>
+                              <div class="team_dscr_img_overlay_soc_icon_block">
+                                <div class="overlay_soc_icon_style">
+                                  <img src="images/facebook.png" alt="facebook" style="width:12px; height:24px;">
+                                </div>
+                              </div>
+                              <div class="team_dscr_img_overlay_soc_icon_block">
+                                <div class="overlay_soc_icon_style">
+                                  <img src="images/dribble.png" alt="dribble" style="width:24px; height:24px;">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="team_dscrp_ppl_bio">
+                      <div class="team_dscrp_ppl_bio_name">
+                    Kristaps Trešais
+                    </div>
+                    <div class="team_dscrp_ppl_bio_position">
+                    Front-end izstrādātājs
+                    </div>
+                  </div>
+                </div>
+                <div class="team_dscrp_ppl team_dscrp_ppl_margin">
+                  <div class="team_dscrp_ppl_img">
+                    <img src="images/team_04.jpg" alt="team_04" style="width:270px;height:300px;">
+                    <div class="team_dscrp_ppl_img_overlay">
+                      <div class="team_dscrp_ppl_img_overlay_cont">
+                        <div class="team_dscrp_overlay_title">
+                          Proin gravida nibh vel velit auctor aliquet
+                        </div>
+                        <div class="team_dscrp_overlay_text">
+                          Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                        </div>
+                        <div class="team_dscrp_ppl_img_overlay_soc_cont">
+                          <div class="team_dscrp_ppl_img_overlay_soc_block">
+                            <div class="team_dscr_img_overlay_soc_icon_block">
+                              <div class="overlay_soc_icon_style">
+                                <img src="images/twitter.png" alt="twitter" style="width:26px; height:24px;">
+                              </div>
+                            </div>
+                            <div class="team_dscr_img_overlay_soc_icon_block">
+                              <div class="overlay_soc_icon_style">
+                                <img src="images/facebook.png" alt="facebook" style="width:12px; height:24px;">
+                              </div>
+                            </div>
+                            <div class="team_dscr_img_overlay_soc_icon_block">
+                              <div class="overlay_soc_icon_style">
+                                <img src="images/dribble.png" alt="dribble" style="width:24px; height:24px;">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team_dscrp_ppl_bio">
+                    <div class="team_dscrp_ppl_bio_name">
+                  Ketija Ceturtā
+                    </div>
+                    <div class="team_dscrp_ppl_bio_position">
+                  UI/UX dizainere
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="contact_container">
+      <div class="contact_overlay">
+        <div class="contact_title">
+          Sazināties
+        </div>
+        <div class="contact_form_cont">
+          <div class="contact_form_block">
+            <div class="contact_form_fields">
+              <form>
+                <input class="contact_form contact__name_email" type="text" name="firstname">
+              </form>
+              <form>
+                <input class="contact_form contact__name_email" type="text" name="lastname">
+              </form>
+              <textarea class="contact_form contact_text" rows="15" cols="98">
+              </textarea>
+              <form>
+                <input class="contact_form_submit contact__name_email" type="text" name="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="contact_form_adress_block">
+          <div class="contact_form_adress">
+            Rīga, Visskaistākā iela 1 // mob: (+371) 26 27 96 07 // hello@moodcreations.eu
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map_container">
+      <div class="map">
+        <!--ka ievadit koda un css google map??-->
+      </div>
+    </div>
+    <div class="copyright_container">
+      <div class="copyright_block">
+        <div class="copyright_text">
+          ⓒ Copyright tekstam ir jābūt šeit, 2015
+        </div>
+      </div>
+    </div>
 </body>
-
-
 
 </html>
