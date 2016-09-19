@@ -48,8 +48,8 @@ font-family: 'Roboto', sans-serif;
   position: relative;
 }
 .logo-name{
-  width: 250px;
-  height: 70px;
+  width: auto;
+  height: auto;
   float: left;
 }
 .logo{
@@ -100,7 +100,7 @@ li.menu_line_btn a:hover{
   height: auto;
 }
 .slider_block{
-  width: 1280px;
+  width: auto;
   height: auto;
   margin: auto;
   position: relative;
@@ -169,12 +169,13 @@ a:hover .vertical_btns_dots{
 .offers_container {
 font-family: 'Roboto', sans-serif;
 background-color: rgb(211,53,35);
-height: 548px;
+height: 578px;
 width: auto;
 margin: auto;
+display: block;
 }
 .offers_title_block {
-  width: 1200px;
+  width: 920px;
   height: auto;
   margin: auto;
   text-align: center;
@@ -187,15 +188,15 @@ margin: auto;
   color: white;
 }
 .offers_clms_block{
-  width: 1200px;
+  width: 1173px;
   height: auto;
   margin: auto;
   display: block;
   text-align: center;
 }
 .offers_clms {
-  margin-top: 70px;
-  width: 300px;
+  margin-top: 48px;
+  width: 293px;
   height: auto;
   display: inline-block;
   float: left;
@@ -233,7 +234,7 @@ margin: auto;
   font-weight: 300;
   text-align: center;
   color: white;
-  margin: 34px 30px;
+  margin: 25px 30px 70px 30px;
   line-height: 1.3333;
 }
 .portfolio_container{
@@ -250,18 +251,18 @@ margin: auto;
   background-color: rgba(87, 170, 104, 0.2);
   }
 .portfolio_block{
-  width: 960px;
+  width: auto;
   height: 388px;
   margin: auto;
 }
 .portfolio_title_block{
-  width: auto;
+  width: 920px;
   height: auto;
   margin: auto;
+  text-align: center;
+  padding-top: 67px;
 }
 .portfolio_title{
-  padding-top: 67px;
-  text-align: center;
   color: white;
   font-size: 30px;
   font-weight: 400;
@@ -408,18 +409,18 @@ a:hover .horizontal_btns_dots{
   margin: auto;
 }
 .team_title_block{
-  width: auto;
+  width: 920px;
   height: auto;
   margin: auto;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
 .team_title{
   font-size: 28px;
   font-weight: 400;
   color: white;
   text-transform: uppercase;
-  text-align: center;
-  padding-top: 70px;
-  padding-bottom: 50px;
 }
 .team_content{
 
@@ -549,14 +550,14 @@ float: left;
   margin: auto;
 }
 .contact_title_block{
-  width: auto;
+  width: 920px;
   height: auto;
   margin: auto;
   text-align: center;
-}
-.contact_title{
   padding-top: 48px;
   padding-bottom: 48px;
+}
+.contact_title{
   font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
@@ -608,16 +609,17 @@ float: left;
   border-radius: 5px;
   border: 2px solid white;
   background-color: transparent;
+  cursor: pointer;
 }
 .contact_form_adress_block{
   width: 780px;
   height: auto;
   margin: auto;
   text-align: center;
-}
-.contact_form_adress{
   padding-top: 42px;
   padding-bottom: 48px;
+}
+.contact_form_adress{
   font-size: 21px;
   font-weight: 300;
   color: white;
