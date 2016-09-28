@@ -64,8 +64,11 @@ body{
 }
 .name{
   display: inline-block;
-  position: relative;
-  top: -20px;
+  position: absolute;;
+  top: 50%;
+  vertical-align: top;
+  transform: translateY(-50%);
+  padding-left: 10px;
   color: white;
   font-weight: 300;
   font-size: 14px;
@@ -100,7 +103,6 @@ li.menu_line_btn a:hover:not(.active){
   border-top: 5px solid rgba(255,255,255,0.6);
   background-color: transparent;
 }
-/*kas jaievada, lai nospiezot citu sadalu, no pirmas sadalas border top pazustu?*/
 li.menu_line_btn a.active{
   border-top: 5px solid rgba(255,255,255,0.6);
   background-color: transparent;
@@ -114,6 +116,7 @@ li.menu_line_btn a.active{
   width: 100%;
   height: auto;
   margin: auto;
+  position: relative;
 }
 .logo_text_block{
   width: 100%;
@@ -134,9 +137,10 @@ li.menu_line_btn a.active{
   width: 100%;
   height: auto;
   margin: auto;
-  position: relative;
+  position: absolute;;
+  top: 50%;
+  vertical-align: top;
   right: 80px;
-  top: -150px;
   text-align: right;
 }
 .vertical_slider_btns{
@@ -163,13 +167,13 @@ outline: none;
   opacity: 1;
   cursor: pointer;
 }
-/*kapec vertical buttons aiznem vietu zem logotipa - tik daudz cik aiznem reali esot sana?*/
 .qoute{
   font-size: 20px;
   font-weight: 300;
   line-height: 1.6;
   display: block;
   margin: 0 auto;
+  margin-top: 50px;
   width: 72%;
   text-align: center;
   color: white;
@@ -598,9 +602,6 @@ display: block;
 
 
 
-
-
-
 .team_container{
   width: 100%;
   height: auto;
@@ -748,7 +749,6 @@ display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  /* ka panakt lai visas soc iconas samazinot ekranu butu vienada augstuma*/
 }
 .contact_container{
   width: 100%;
