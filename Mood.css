@@ -588,14 +588,11 @@ display: block;
 }
 .pricelist_sets_signup:hover:not(.active_signup){
   background-color: #478587;
-  border: 1px solid transparent;
   border-radius: 5px;
   cursor: pointer;
 }
-/*ka uzlikt overlay toni visai colonnai, kad uzbrauc ar peli?*/
 .active_signup{
   background-color: #478587;
-  border: 1px solid rgb(71,133,135);
   border-radius: 5px;
   cursor: pointer;
 }
