@@ -561,15 +561,7 @@ text-align: center;
   position: relative;
   top:20%;
 }
-.fa_twitter{
-  color: white;
-  font-size: 25px;
-}
-.fa_facebook{
-  color: white;
-  font-size: 25px;
-}
-.fa_dribbble{
+i.fa_twitter,i.fa_facebook, i.fa_dribbble{
   color: white;
   font-size: 25px;
 }
