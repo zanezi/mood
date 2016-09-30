@@ -497,7 +497,9 @@ text-align: center;
 .team_slider_person{
   width: 22.5%;
   display: inline-block;
-  margin: 0px 9px 77px 9px;;
+  margin: 0px 9px 0px 9px;
+  vertical-align: top;
+  padding-bottom: 77px;
 }
 .team_slider_person_img{
   position: relative;
