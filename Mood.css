@@ -148,6 +148,7 @@ opacity: 0.8;
 }
 .icons_img{
   max-width: 100%;
+  border: transparent;
 }
 
 
@@ -644,6 +645,9 @@ text-align: center;
   height: 232px;
   padding-top: 13px;
   resize: vertical;
+}
+.textarea_scroll{
+  overflow: hidden;
 }
 .contact_form_adress_block{
   width: 55%;
